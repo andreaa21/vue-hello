@@ -9,3 +9,20 @@ Bonus:
 3. Al click di un bottone nascondere l’immagine e mostrare un testo
 
 */
+
+
+const { createApp } = Vue;
+
+createApp({
+    data(){
+        return{
+            text: 'questo è un messaggio',
+            miaClasse: 'rosso'
+        }
+    },
+    methods:{
+        cambiaColore(colore){
+            this.miaClasse = colore;
+        }
+    }
+}).mount('#app')
