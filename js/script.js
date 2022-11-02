@@ -17,12 +17,20 @@ createApp({
     data(){
         return{
             text: 'questo è un messaggio',
-            miaClasse: 'rosso'
+            miaClasse: 'rosso',
+            path: './img/',
+            imgName: 'jumbo.png',
+            imgClasse: 'bianconero',
+            isHidden: 'false'
         }
     },
     methods:{
         cambiaColore(colore){
             this.miaClasse = colore;
+        },
+        nascondiImmagine(){
+            console.log(this.isHidden);
+            this.isHidden = !this.isHidden
         }
     }
 }).mount('#app')

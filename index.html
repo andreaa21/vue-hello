@@ -14,7 +14,9 @@
 
     <div id="app">
         <button @click="miaClasse = 'sottolinea'">sottolinea</button><br>
-        <button @click="cambiaColore('verde')">testo verde</button>
+        <button @click="cambiaColore('verde')">testo verde</button><br>
+        <img :src="path + imgName" alt="" :class="imgClasse"><br>
+        <button @click="nascondiImmagine()">Nascondi l'immagine</button>
        <h1 :class="miaClasse">{{text}}</h1> 
     </div>
 
