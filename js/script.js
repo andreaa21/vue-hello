@@ -20,8 +20,10 @@ createApp({
             miaClasse: 'rosso',
             path: './img/',
             imgName: 'jumbo.png',
+            imgName2: 'boolando.png',
             imgClasse: 'bianconero',
-            isHidden: 'false'
+            isHidden: 'false',
+            altraClasse: 'sottolinea'
         }
     },
     methods:{
@@ -31,6 +33,9 @@ createApp({
         nascondiImmagine(){
             console.log(this.isHidden);
             this.isHidden = !this.isHidden
+        },
+        cambiaImmagine(){
+            this.imgName = this.imgName2;
         }
     }
 }).mount('#app')

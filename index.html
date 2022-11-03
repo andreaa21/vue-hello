@@ -16,8 +16,9 @@
         <button @click="miaClasse = 'sottolinea'">sottolinea</button><br>
         <button @click="cambiaColore('verde')">testo verde</button><br>
         <img :src="path + imgName" alt="" :class="imgClasse"><br>
+        <button @click="cambiaImmagine()">cambia immagine</button>
         <button @click="nascondiImmagine()">Nascondi l'immagine</button>
-       <h1 :class="miaClasse">{{text}}</h1> 
+       <h1 :class="[miaClasse, altraClasse]">{{text}}</h1> 
     </div>
 
     <script src="js/script.js"></script>
